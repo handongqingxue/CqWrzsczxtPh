@@ -1,0 +1,30 @@
+<!--pages/siJiDingDanLieBiao/siJiDingDanLieBiao.wxml-->
+<view class="top_v">
+	订单查询
+</view>
+<view class="back_v">
+	<span class="back_span" onclick="goBack()">{{backSign}}返回</span>
+	<span class="fb_span" onclick="addComment()">发布</span>
+</view>
+<view class="tool_v">
+  <input class="ddh_inp" placeholder="请输入订单号"/>
+  <view class="cx_but_v">查询</view>
+</view>
+<view class="ddxx_v">
+	<view class="ddh_v">
+		<view class="tit_v">订单号</view>
+		<view class="ddh_val_v">111111</view>
+	</view>
+	<view class="sjsfzh_v">
+		<view class="tit_v">司机身份证号</view>
+		<view class="sjsfzh_inp_v">
+      <input type="text" class="sjsfzh_inp" id="sjsfzh" value="370205199005050515" placeholder="请输入司机身份证号" onfocus="focusPhone()" onblur="checkPhone()"/>
+    </view>
+	</view>
+	<view class="sjxm_v">
+		<view class="tit_v">司机姓名</view>
+		<view class="sjxm_inp_v">
+      <input type="text" class="sjxm_inp" id="sjxm" value="嬲" placeholder="请输入司机姓名" onfocus="focusPhone()" onblur="checkPhone()"/>
+    </view>
+	</view>
+</view>

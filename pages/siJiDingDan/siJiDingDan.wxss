@@ -1,0 +1,78 @@
+/* pages/siJiDingDanLieBiao/siJiDingDanLieBiao.wxss */
+.top_v{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	color:#fff;
+	background-color: #1777FF;
+}
+.back_v{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color:#fff;
+	margin-top: -40px;
+}
+.back_span{
+	margin-left: 10px;
+	position: absolute;
+}
+.back_v .fb_span{
+	margin-right: 15px;
+	float: right;
+}
+.tool_v{
+  width:100%;
+  height:30px;
+  padding:1px;
+}
+.ddh_inp{
+  width:230px;
+  height:25px;
+  margin-top:2px;
+  margin-left:5px;
+  padding-left:5px;
+}
+.cx_but_v{
+  width:50px;
+  height:28px;
+  line-height:28px;
+  color:#fff;
+  font-size:15px;
+  text-align:center;
+  background-color:#1777FF;
+  margin-top:-26px;
+  margin-right:5px;
+  float:right;
+  border-radius:5px;
+}
+.ddxx_v{
+  width: 100%;
+}
+.ddh_v,.sjsfzh_v,.sjxm_v,.wxNo_v{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 5px;
+	background-color: #fff;
+}
+.ddh_v .tit_v,.sjsfzh_v .tit_v,.sjxm_v .tit_v,.wxNo_v .tit_v{
+	width: 35%;
+	height: 40px;
+	padding-left: 10px;
+}
+.ddh_v .ddh_val_v,.sjsfzh_v .sjsfzh_inp_v,.sjxm_v .sjxm_inp_v,.wxNo_v .wxNo_inp_v{
+	height: 40px;
+	margin-left: 40%;
+	margin-top: -40px;
+}
+.sjsfzh_v .sjsfzh_inp,.sjxm_v .sjxm_inp,.wxNo_v .wxNo_inp{
+	width: 180px;
+	height: 25px;
+  line-height: 25px;
+  margin-top: 8px;
+  font-size: 15px;
+  border: 0;
+  background-color: #0f0;
+}
