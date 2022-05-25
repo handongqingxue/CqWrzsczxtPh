@@ -50,29 +50,29 @@
 .ddxx_v{
   width: 100%;
 }
-.ddh_v,.sjsfzh_v,.sjxm_v,.wxNo_v{
+.ddh_v,.sjsfzh_v,.sjxm_v,.cph_v,.lxlx_v,.wzlx_v,.wzmc_v,.yss_v,.fhdw_v,.shbm_v{
 	width:100%;
 	height: 40px;
 	line-height: 40px;
 	margin-top: 5px;
 	background-color: #fff;
 }
-.ddh_v .tit_v,.sjsfzh_v .tit_v,.sjxm_v .tit_v,.wxNo_v .tit_v{
+.ddh_v .tit_v,.sjsfzh_v .tit_v,.sjxm_v .tit_v,.cph_v .tit_v,.lxlx_v .tit_v,.wzlx_v .tit_v,.wzmc_v .tit_v,.yss_v .tit_v,.fhdw_v .tit_v,.shbm_v .tit_v{
 	width: 35%;
 	height: 40px;
 	padding-left: 10px;
 }
-.ddh_v .ddh_val_v,.sjsfzh_v .sjsfzh_inp_v,.sjxm_v .sjxm_inp_v,.wxNo_v .wxNo_inp_v{
+.ddh_v .val_v,.sjsfzh_v .inp_v,.sjxm_v .inp_v,
+.cph_v .inp_v,.lxlx_v .val_v,.wzlx_v .val_v,.wzmc_v .val_v,.yss_v .val_v,.fhdw_v .val_v,.shbm_v .val_v{
 	height: 40px;
 	margin-left: 40%;
 	margin-top: -40px;
 }
-.sjsfzh_v .sjsfzh_inp,.sjxm_v .sjxm_inp,.wxNo_v .wxNo_inp{
+.sjsfzh_v .sjsfzh_inp,.sjxm_v .sjxm_inp,.cph_v .cph_inp{
 	width: 180px;
 	height: 25px;
   line-height: 25px;
   margin-top: 8px;
   font-size: 15px;
   border: 0;
-  background-color: #0f0;
 }

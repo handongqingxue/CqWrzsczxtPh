@@ -13,18 +13,48 @@
 <view class="ddxx_v">
 	<view class="ddh_v">
 		<view class="tit_v">订单号</view>
-		<view class="ddh_val_v">111111</view>
+		<view class="val_v">111111</view>
 	</view>
 	<view class="sjsfzh_v">
 		<view class="tit_v">司机身份证号</view>
-		<view class="sjsfzh_inp_v">
+		<view class="inp_v">
       <input type="text" class="sjsfzh_inp" id="sjsfzh" value="370205199005050515" placeholder="请输入司机身份证号" onfocus="focusPhone()" onblur="checkPhone()"/>
     </view>
 	</view>
 	<view class="sjxm_v">
 		<view class="tit_v">司机姓名</view>
-		<view class="sjxm_inp_v">
+		<view class="inp_v">
       <input type="text" class="sjxm_inp" id="sjxm" value="嬲" placeholder="请输入司机姓名" onfocus="focusPhone()" onblur="checkPhone()"/>
     </view>
+	</view>
+	<view class="cph_v">
+		<view class="tit_v">车牌号</view>
+		<view class="inp_v">
+      <input type="text" class="cph_inp" id="cph" value="9008" placeholder="请输入车牌号" onfocus="focusPhone()" onblur="checkPhone()"/>
+    </view>
+	</view>
+	<view class="lxlx_v">
+		<view class="tit_v">流向类型</view>
+		<view class="val_v">111111</view>
+	</view>
+	<view class="wzlx_v">
+		<view class="tit_v">物资类型</view>
+		<view class="val_v">111111</view>
+	</view>
+	<view class="wzmc_v">
+		<view class="tit_v">物资名称</view>
+		<view class="val_v">111111</view>
+	</view>
+	<view class="yss_v">
+		<view class="tit_v">运输商</view>
+		<view class="val_v">111111</view>
+	</view>
+	<view class="fhdw_v">
+		<view class="tit_v">发货单位</view>
+		<view class="val_v">111111</view>
+	</view>
+	<view class="shbm_v">
+		<view class="tit_v">收货部门</view>
+		<view class="val_v">111111</view>
 	</view>
 </view>
