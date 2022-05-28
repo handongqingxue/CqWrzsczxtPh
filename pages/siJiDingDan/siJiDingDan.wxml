@@ -7,54 +7,56 @@
 	<span class="fb_span" onclick="addComment()">发布</span>
 </view>
 <view class="tool_v">
-  <input class="ddh_inp" placeholder="请输入订单号"/>
-  <view class="cx_but_v">查询</view>
+  <input class="ddh_inp" id="ddh_inp" placeholder="请输入订单号" value="20220307003" bindinput="getInputValue"/>
+  <view class="cx_but_v" catchtap="searchDDByDdh">查询</view>
 </view>
-<view class="ddxx_v">
+<view class="ddxx_v" wx:if="{{showDdxxV}}">
 	<view class="ddh_v">
 		<view class="tit_v">订单号</view>
-		<view class="val_v">111111</view>
+		<view class="val_v">{{dingDan.ddh}}</view>
 	</view>
 	<view class="sjsfzh_v">
 		<view class="tit_v">司机身份证号</view>
 		<view class="inp_v">
-      <input type="text" class="sjsfzh_inp" id="sjsfzh" value="370205199005050515" placeholder="请输入司机身份证号" onfocus="focusPhone()" onblur="checkPhone()"/>
+      <input type="text" class="sjsfzh_inp" id="sjsfzh" value="{{dingDan.sjsfzh}}" placeholder="请输入司机身份证号"/>
     </view>
 	</view>
 	<view class="sjxm_v">
 		<view class="tit_v">司机姓名</view>
 		<view class="inp_v">
-      <input type="text" class="sjxm_inp" id="sjxm" value="嬲" placeholder="请输入司机姓名" onfocus="focusPhone()" onblur="checkPhone()"/>
+      <input type="text" class="sjxm_inp" id="sjxm" value="{{dingDan.sjxm}}" placeholder="请输入司机姓名"/>
     </view>
 	</view>
 	<view class="cph_v">
 		<view class="tit_v">车牌号</view>
 		<view class="inp_v">
-      <input type="text" class="cph_inp" id="cph" value="9008" placeholder="请输入车牌号" onfocus="focusPhone()" onblur="checkPhone()"/>
+      <input type="text" class="cph_inp" id="cph" value="{{dingDan.cph}}" placeholder="请输入车牌号"/>
     </view>
 	</view>
 	<view class="lxlx_v">
 		<view class="tit_v">流向类型</view>
-		<view class="val_v">111111</view>
+		<view class="val_v">{{dingDan.lxlx==1?"送":"取"}}运</view>
 	</view>
 	<view class="wzlx_v">
 		<view class="tit_v">物资类型</view>
-		<view class="val_v">111111</view>
+		<view class="val_v">{{dingDan.wzlxMc}}</view>
 	</view>
 	<view class="wzmc_v">
 		<view class="tit_v">物资名称</view>
-		<view class="val_v">111111</view>
+		<view class="val_v">{{dingDan.wzMc}}</view>
 	</view>
 	<view class="yss_v">
 		<view class="tit_v">运输商</view>
-		<view class="val_v">111111</view>
+		<view class="val_v">{{dingDan.yssMc}}</view>
 	</view>
 	<view class="fhdw_v">
 		<view class="tit_v">发货单位</view>
-		<view class="val_v">111111</view>
+		<view class="val_v">{{dingDan.fhdwMc}}</view>
 	</view>
 	<view class="shbm_v">
 		<view class="tit_v">收货部门</view>
-		<view class="val_v">111111</view>
+		<view class="val_v">{{dingDan.shbmMc}}</view>
 	</view>
+	<view class="zjpd_but_v" wx:if="{{zjpdzDdztMc==dingDan.ddztMc}}">{{zjpdzDdztMc}}质检排队</view>
 </view>
+<view class="noDd_v" wx:else>{{noDdInfo}}</view>

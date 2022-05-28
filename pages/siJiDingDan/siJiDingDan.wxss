@@ -76,3 +76,9 @@
   font-size: 15px;
   border: 0;
 }
+.zjpd_but_v{
+	width:90%;height:30px;line-height:30px;margin:10px auto;color:#fff;text-align:center;background-color: #1777FF;border-radius:5px;
+}
+.noDd_v{
+	text-align: center;
+}
