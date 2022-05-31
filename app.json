@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/siJiDingDan/siJiDingDan",
+    "pages/siJiPaiDui/siJiPaiDui",
     "pages/index/index",
     "pages/logs/logs"
   ],

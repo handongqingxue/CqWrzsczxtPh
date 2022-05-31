@@ -1,0 +1,24 @@
+<!--pages/siJiPaiDui/siJiPaiDui.wxml-->
+<view class="top_v">
+	排队查询
+</view>
+<view class="back_v">
+	<span class="back_span" data-qyh="{{qyh}}" data-page="siJiDingDan" catchtap="goPage">{{backSign}}返回</span>
+</view>
+<view class="pdxx_v">
+	<view class="cph_v">
+		<view class="tit_v">车牌号</view>
+		<view class="val_v">{{paiDuiJiLu.cph}}</view>
+	</view>
+	<view class="pdh_v">
+		<view class="tit_v">排队号</view>
+		<view class="val_v">{{paiDuiJiLu.pdh}}</view>
+	</view>
+	<view class="qmsl_v">
+		<view class="tit_v">前面还有</view>
+		<view class="val_v">{{paiDuiJiLu.qmsl}}个号</view>
+	</view>
+  <view class="ewmlj_v">
+    <image class="ewmlj_img" src="http://192.168.1.7:8080/{{paiDuiJiLu.ewmlj}}"/>
+  </view>
+</view>

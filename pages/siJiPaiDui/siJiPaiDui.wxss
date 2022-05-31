@@ -1,0 +1,47 @@
+/* pages/siJiPaiDui/siJiPaiDui.wxss */
+.top_v{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	color:#fff;
+	background-color: #1777FF;
+}
+.back_v{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color:#fff;
+	margin-top: -40px;
+}
+.back_span{
+	margin-left: 10px;
+	position: absolute;
+}
+.pdxx_v{
+  width: 100%;
+}
+.cph_v,.pdh_v,.qmsl_v{
+  width:100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 5px;
+	background-color: #fff;
+}
+.cph_v .tit_v,.pdh_v .tit_v,.qmsl_v .tit_v{
+  width: 35%;
+	height: 40px;
+	padding-left: 10px;
+}
+.cph_v .val_v,.pdh_v .val_v,.qmsl_v .val_v{
+  height: 40px;
+	margin-left: 40%;
+	margin-top: -40px;
+}
+.ewmlj_v{
+  text-align:center;
+}
+.ewmlj_img{
+  width:300px;
+  height:300px;
+}

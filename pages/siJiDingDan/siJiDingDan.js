@@ -86,7 +86,7 @@ Page({
         console.log("message==="+message)
         if(message=="ok"){
           let dingDan=data.dingDan;
-          siJiDingDan.setData({dingDan:dingDan,zjpdzDdztMc:data.zjpdzDdztMc,showDdxxV:true});
+          siJiDingDan.setData({dingDan:dingDan,dzjDdztMc:data.dzjDdztMc,showDdxxV:true});
         }
         else{
           siJiDingDan.setData({noDdInfo:data.info,showDdxxV:false});
@@ -115,5 +115,33 @@ Page({
     if(siJiDingDan.checkDdh()){
       siJiDingDan.getDingDanByDdh();
     }
+  },
+  newPaiDuiJiLu:function(){
+    let ddId=siJiDingDan.data.dingDan.id;
+    let qyh=siJiDingDan.data.qyh;
+    wx.request({
+      url: rootIP+"newPaiDuiJiLu",
+      method: 'POST',
+      data: { ddId:ddId,qyh:qyh},
+      header: {
+        'content-type': 'application/x-www-form-urlencoded',
+      },
+      success: function (res) {
+        let data=res.data;
+        let message=data.message;
+        if(message=="ok"){
+          let e={currentTarget:{dataset:{page:"siJiPaiDui"}}};
+          siJiDingDan.goPage(e);
+        }
+      }
+    })
+  },
+  goPage:function(e){
+    let ddId=siJiDingDan.data.dingDan.id;
+    let qyh=siJiDingDan.data.qyh;
+    let page=e.currentTarget.dataset.page;
+    wx.redirectTo({
+      url: '/pages/'+page+'/'+page+'?ddId='+ddId+'&qyh='+qyh,
+    })
   }
 })
