@@ -91,5 +91,13 @@ Page({
         }
       }
     })
+  },
+  radioChange:function(e){
+    let value=e.detail.value;
+    daiZhiJian.setData({zjjg:value});
+  },
+  newPaiDuiJiLu:function(){
+    let ddId=daiZhiJian.data.dingDan.id;
+    console.log("ddId==="+ddId);
   }
 })

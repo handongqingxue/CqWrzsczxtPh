@@ -20,4 +20,15 @@
 		<view class="tit_v">流向类型</view>
 		<view class="val_v">{{dingDan.lxlx==1?'送运':'取运'}}</view>
 	</view>
+	<view class="zjjg_v">
+		<view class="tit_v">质检结果</view>
+		<view class="val_v">
+      <radio-group bindchange="radioChange">
+        <radio value="1" checked="true">合格</radio>
+        <radio value="2" checked="true" wx:if="{{zjjg==2}}">不合格</radio>
+        <radio value="2" wx:else>不合格</radio>
+      </radio-group>
+    </view>
+	</view>
+	<view class="tj_but_v" catchtap="newPaiDuiJiLu">提交</view>
 </view>
