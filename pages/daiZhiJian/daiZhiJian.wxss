@@ -1,0 +1,40 @@
+/* pages/daiZhiJian/daiZhiJian.wxss */
+.top_v{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	color:#fff;
+	background-color: #1777FF;
+}
+.back_v{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color:#fff;
+	margin-top: -40px;
+}
+.back_span{
+	margin-left: 10px;
+	position: absolute;
+}
+.ddxx_v{
+  width: 100%;
+}
+.ddh_v,.cph_v,.yssMc_v,.lxlx_v{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 5px;
+	background-color: #fff;
+}
+.ddh_v .tit_v,.cph_v .tit_v,.yssMc_v .tit_v,.lxlx_v .tit_v{
+	width: 35%;
+	height: 40px;
+	padding-left: 10px;
+}
+.ddh_v .val_v,.cph_v .val_v,.yssMc_v .val_v,.lxlx_v .val_v{
+	height: 40px;
+	margin-left: 40%;
+	margin-top: -40px;
+}

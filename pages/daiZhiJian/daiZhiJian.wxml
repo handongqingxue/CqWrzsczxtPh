@@ -1,0 +1,23 @@
+<!--pages/daiZhiJian/daiZhiJian.wxml-->
+<view class="top_v">待质检</view>
+<view class="back_v">
+	<span class="back_span" onclick="goBack()">{{backSign}}返回</span>
+</view>
+<view class="ddxx_v">
+	<view class="ddh_v">
+		<view class="tit_v">订单号</view>
+		<view class="val_v">{{dingDan.ddh}}</view>
+	</view>
+	<view class="cph_v">
+		<view class="tit_v">车牌号</view>
+		<view class="val_v">{{dingDan.cph}}</view>
+	</view>
+	<view class="yssMc_v">
+		<view class="tit_v">运输商</view>
+		<view class="val_v">{{dingDan.yssMc}}</view>
+	</view>
+	<view class="lxlx_v">
+		<view class="tit_v">流向类型</view>
+		<view class="val_v">{{dingDan.lxlx==1?'送运':'取运'}}</view>
+	</view>
+</view>

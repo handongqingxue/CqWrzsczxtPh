@@ -1,5 +1,5 @@
 // app.js
-var rootIP = "http://192.168.1.7:8080/ZnczXcx/xcx/";
+var rootIP = "http://192.168.1.5:8080/ZnczXcx/xcx/";
 App({
   onLaunch() {
     // 展示本地存储能力

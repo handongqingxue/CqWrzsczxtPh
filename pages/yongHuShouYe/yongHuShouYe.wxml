@@ -1,0 +1,11 @@
+<!--pages/yongHuShouYe/yongHuShouYe.wxml-->
+<view class="top_v">
+	智能称重平台
+</view>
+<view class="exit_v">
+	<span class="exit_span" onclick="goBack()">注销</span>
+	<span class="scan_span" catchtap="scanCodeEvent">扫码</span>
+</view>
+<view class="ddxx_v">
+	<view class="ddh_v">质检记录</view>
+</view>

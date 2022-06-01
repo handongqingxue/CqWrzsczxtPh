@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/daiZhiJian/daiZhiJian",
+    "pages/yongHuShouYe/yongHuShouYe",
     "pages/siJiDingDan/siJiDingDan",
     "pages/siJiPaiDui/siJiPaiDui",
     "pages/index/index",
