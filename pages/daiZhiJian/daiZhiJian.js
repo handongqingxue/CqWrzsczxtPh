@@ -98,6 +98,29 @@ Page({
   },
   newPaiDuiJiLu:function(){
     let ddId=daiZhiJian.data.dingDan.id;
+    let zjyId=9;
+    let jg=daiZhiJian.data.zjjg;
+    let qyh="yuejiazhuang";
     console.log("ddId==="+ddId);
+    wx.request({
+      url: rootIP+"newZhiJianJiLu",
+      method: 'POST',
+      data: { ddId:ddId,zjyId:zjyId,jg:jg,qyh:qyh},
+      header: {
+        'content-type': 'application/x-www-form-urlencoded',
+      },
+      success: function (res) {
+        console.log(res);
+        let data=res.data;
+        let message=data.message;
+        console.log("message==="+message)
+        if(message=="ok"){
+
+        }
+        else{
+          
+        }
+      }
+    })
   }
 })
