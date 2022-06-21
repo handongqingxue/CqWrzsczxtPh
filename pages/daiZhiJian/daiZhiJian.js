@@ -16,8 +16,8 @@ Page({
   onLoad: function (options) {
     daiZhiJian=this;
     rootIP=getApp().getRootIP();
-    //let ddh=options.ddh;
-    let ddh="20220530003";
+    let ddh=options.ddh;
+    //let ddh="20220530003";
     daiZhiJian.setData({ddh:ddh});
   },
 
@@ -72,6 +72,7 @@ Page({
   },
   getDzjDingDanByDdh:function(){
     let ddh=daiZhiJian.data.ddh;
+    console.log("ddh==="+ddh)
     let qyh="yuejiazhuang";
     wx.request({
       url: rootIP+"getDzjDingDanByDdh",
@@ -97,15 +98,15 @@ Page({
     daiZhiJian.setData({zjjg:value});
   },
   newPaiDuiJiLu:function(){
-    let ddId=daiZhiJian.data.dingDan.id;
+    let yfwDdId=daiZhiJian.data.dingDan.id;
     let zjyId=9;
     let jg=daiZhiJian.data.zjjg;
     let qyh="yuejiazhuang";
-    console.log("ddId==="+ddId);
+    console.log("yfwDdId==="+yfwDdId);
     wx.request({
       url: rootIP+"newZhiJianJiLu",
       method: 'POST',
-      data: { ddId:ddId,zjyId:zjyId,jg:jg,qyh:qyh},
+      data: { yfwDdId:yfwDdId,zjyId:zjyId,jg:jg,qyh:qyh},
       header: {
         'content-type': 'application/x-www-form-urlencoded',
       },
@@ -115,7 +116,9 @@ Page({
         let message=data.message;
         console.log("message==="+message)
         if(message=="ok"){
-
+          wx.redirectTo({
+            url: '/pages/yongHuShouYe/yongHuShouYe',
+          })
         }
         else{
           

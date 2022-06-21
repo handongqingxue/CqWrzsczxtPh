@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/daiZhiJian/daiZhiJian",
+    "pages/login/login",
     "pages/yongHuShouYe/yongHuShouYe",
     "pages/siJiDingDan/siJiDingDan",
+    "pages/daiZhiJian/daiZhiJian",
     "pages/siJiPaiDui/siJiPaiDui",
     "pages/index/index",
     "pages/logs/logs"

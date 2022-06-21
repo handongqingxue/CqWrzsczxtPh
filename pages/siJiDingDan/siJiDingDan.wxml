@@ -7,7 +7,7 @@
 	<span class="fb_span" onclick="addComment()">发布</span>
 </view>
 <view class="tool_v">
-  <input class="ddh_inp" id="ddh_inp" placeholder="请输入订单号" value="20220530003" bindinput="getInputValue"/>
+  <input class="ddh_inp" id="ddh_inp" placeholder="请输入订单号" value="20220609003" bindinput="getInputValue"/>
   <view class="cx_but_v" catchtap="searchDDByDdh">查询</view>
 </view>
 <view class="ddxx_v" wx:if="{{showDdxxV}}">

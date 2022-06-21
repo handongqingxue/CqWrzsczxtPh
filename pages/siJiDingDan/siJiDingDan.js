@@ -117,12 +117,12 @@ Page({
     }
   },
   newPaiDuiJiLu:function(){
-    let ddId=siJiDingDan.data.dingDan.id;
+    let yfwDdId=siJiDingDan.data.dingDan.id;
     let qyh=siJiDingDan.data.qyh;
     wx.request({
       url: rootIP+"newPaiDuiJiLu",
       method: 'POST',
-      data: { ddId:ddId,qyh:qyh},
+      data: { yfwDdId:yfwDdId,qyh:qyh},
       header: {
         'content-type': 'application/x-www-form-urlencoded',
       },
