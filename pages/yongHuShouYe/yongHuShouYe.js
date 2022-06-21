@@ -88,5 +88,10 @@ Page({
     wx.redirectTo({
       url: '/pages/'+page+'/'+page+'?'+param
     })
+  },
+  goBack:function(){
+    wx.clearStorageSync();
+    let e={currentTarget:{dataset:{page:"login"}}};
+    yongHuShouYe.goPage(e);
   }
 })

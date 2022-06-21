@@ -114,17 +114,19 @@ Page({
       success: function (res) {
         console.log(res);
         let data=res.data;
-        /*
-        let message=data.message;
-        console.log("message==="+message)
-        if(message=="ok"){
-          let dingDan=data.dingDan;
-          siJiDingDan.setData({dingDan:dingDan,dzjDdztMc:data.dzjDdztMc,showDdxxV:true});
+        let status=data.status;
+        if(status==1){
+          let yongHu=res.data.data;
+          wx.setStorageSync("yongHu", yongHu);
+          wx.redirectTo({
+            url: '/pages/yongHuShouYe/yongHuShouYe',
+          })
         }
         else{
-          siJiDingDan.setData({noDdInfo:data.info,showDdxxV:false});
+          wx.showToast({
+            title: res.data.msg,
+          })
         }
-        */
       }
     })
   },
