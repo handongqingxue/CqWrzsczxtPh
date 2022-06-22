@@ -17,14 +17,17 @@ Page({
   onLoad: function (options) {
     login=this;
     rootIP=getApp().getRootIP();
-    login.setData({qyh:"yuejiazhuang"});
+    //let qyh=options.qyh;
+    let qyh="yuejiazhuang";
+    login.setData({qyh:qyh});
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    let yongHu=wx.getStorageSync('yongHu');
+    login.setData({yhm: yongHu.yhm,mm:yongHu.mm});
   },
 
   /**
@@ -117,6 +120,8 @@ Page({
         let status=data.status;
         if(status==1){
           let yongHu=res.data.data;
+          let qyh=login.data.qyh;
+          yongHu.qyh=qyh;
           wx.setStorageSync("yongHu", yongHu);
           wx.redirectTo({
             url: '/pages/yongHuShouYe/yongHuShouYe',

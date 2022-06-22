@@ -26,6 +26,8 @@ Page({
    */
   onReady: function () {
     daiZhiJian.setData({backSign:'<'});
+    let yongHu=wx.getStorageSync('yongHu');
+    daiZhiJian.setData({yongHu:yongHu});
     daiZhiJian.getDzjDingDanByDdh();
   },
 
@@ -73,7 +75,7 @@ Page({
   getDzjDingDanByDdh:function(){
     let ddh=daiZhiJian.data.ddh;
     console.log("ddh==="+ddh)
-    let qyh="yuejiazhuang";
+    let qyh=daiZhiJian.data.yongHu.qyh;
     wx.request({
       url: rootIP+"getDzjDingDanByDdh",
       method: 'POST',
@@ -99,9 +101,10 @@ Page({
   },
   newPaiDuiJiLu:function(){
     let yfwDdId=daiZhiJian.data.dingDan.id;
-    let zjyId=9;
+    let yongHu=daiZhiJian.data.yongHu;
+    let zjyId=yongHu.id;
     let jg=daiZhiJian.data.zjjg;
-    let qyh="yuejiazhuang";
+    let qyh=yongHu.qyh;
     console.log("yfwDdId==="+yfwDdId);
     wx.request({
       url: rootIP+"newZhiJianJiLu",

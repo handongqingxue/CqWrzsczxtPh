@@ -2,6 +2,9 @@
 <view class="top_v">
 	质检记录
 </view>
+<view class="back_v">
+	<span class="back_span" data-page="yongHuShouYe" catchtap="goPage">{{backSign}}返回</span>
+</view>
 <view class="tool_v">
     <view class="ddh_v">
       <view class="tit_v">订单号</view>

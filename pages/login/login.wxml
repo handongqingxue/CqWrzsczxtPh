@@ -6,7 +6,7 @@
 	<view class="yhm_v">
 		<view class="tit_v">用户名</view>
 		<view class="inp_v">
-      <input type="text" class="yhm_inp" id="yhm_inp" placeholder="请输入用户名" bindinput="getInputValue"/>
+      <input type="text" class="yhm_inp" id="yhm_inp" value="{{yhm}}" placeholder="请输入用户名" bindinput="getInputValue"/>
     </view>
 	</view>
 	<view class="mm_v">

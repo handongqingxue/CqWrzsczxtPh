@@ -4,8 +4,9 @@
 </view>
 <view class="exit_v">
 	<span class="exit_span" catchtap="goBack">注销</span>
-	<span class="scan_span" catchtap="scanCodeEvent">扫码</span>
+	<span class="yhm_span">{{yhm}}</span>
 </view>
-<view class="ddxx_v">
-	<view class="ddh_v" data-page="zhiJianJiLu" catchtap="goPage">质检记录</view>
+<view class="cdan_v">
+	<view class="zjjl_but_v" data-page="zhiJianJiLu" catchtap="goPage">质检记录</view>
+	<view class="scan_but_v" catchtap="scanCodeEvent">扫码</view>
 </view>

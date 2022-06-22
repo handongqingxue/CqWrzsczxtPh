@@ -24,6 +24,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    zhiJianJiLu.setData({backSign:'<'});
     zhiJianJiLu.getZhiJianJiLuList();
   },
 
@@ -74,7 +75,7 @@ Page({
     wx.request({
       url: rootIP+"getZhiJianJiLuList",
       method: 'POST',
-      data: { ddh:ddh,qyh:'yuejiazhuang'},
+      data: { ddh:ddh,qyh:yongHu.qyh},
       header: {
         'content-type': 'application/x-www-form-urlencoded',
       },

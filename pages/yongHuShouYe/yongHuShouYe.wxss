@@ -18,14 +18,14 @@
 	margin-left: 10px;
 	position: absolute;
 }
-.exit_v .scan_span{
+.exit_v .yhm_span{
 	margin-right: 15px;
 	float: right;
 }
-.ddxx_v{
+.cdan_v{
   width: 100%;
 }
-.ddh_v{
+.zjjl_but_v,.scan_but_v{
 	width:200px;
 	height: 40px;
 	line-height: 40px;
