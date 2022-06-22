@@ -1,0 +1,29 @@
+<!--pages/zhiJianJiLu/zhiJianJiLu.wxml-->
+<view class="top_v">
+	质检记录
+</view>
+<view class="list_v" wx:for-items="{{zjjlList}}">
+  <view class="item_v">
+    <view class="ddh_v">
+      <view class="tit_v">订单号</view>
+      <view class="val_v">{{item.ddh}}</view>
+    </view>
+    <view class="ddzt_v">
+      <view class="tit_v">订单状态</view>
+      <view class="val_v">{{item.ddztMc}}</view>
+    </view>
+    <view class="zjy_v">
+      <view class="tit_v">质检员</view>
+      <view class="val_v">{{item.zjyZsxm}}</view>
+    </view>
+    <view class="zjjg_v">
+      <view class="tit_v">质检结果</view>
+      <view class="val_v" wx:if="{{item.jg==1}}">合格</view>
+      <view class="val_v" wx:else>不合格</view>
+    </view>
+    <view class="zjsj_v">
+      <view class="tit_v">质检时间</view>
+      <view class="val_v">{{item.zjsj}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+/* pages/zhiJianJiLu/zhiJianJiLu.wxss */
+.top_v{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	color:#fff;
+	background-color: #1777FF;
+}
+.list_v{
+  width: 100%;
+}
+.list_v .item_v{
+  width: 100%;
+  height: 200px;
+	margin-top: 5px;
+}
+.list_v .item_v .ddh_v,
+.list_v .item_v .ddzt_v,
+.list_v .item_v .zjy_v,
+.list_v .item_v .zjjg_v,
+.list_v .item_v .zjsj_v{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+}
+.list_v .item_v .ddh_v .tit_v,
+.list_v .item_v .ddzt_v .tit_v,
+.list_v .item_v .zjy_v .tit_v,
+.list_v .item_v .zjjg_v .tit_v,
+.list_v .item_v .zjsj_v .tit_v{
+	width: 35%;
+	height: 40px;
+	padding-left: 10px;
+}
+.list_v .item_v .ddh_v .val_v,
+.list_v .item_v .ddzt_v .val_v,
+.list_v .item_v .zjy_v .val_v,
+.list_v .item_v .zjjg_v .val_v,
+.list_v .item_v .zjsj_v .val_v{
+	height: 40px;
+	margin-left: 40%;
+	margin-top: -40px;
+}
