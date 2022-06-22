@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    ddh:''
   },
 
   /**
@@ -69,8 +69,7 @@ Page({
 
   },
   getZhiJianJiLuList:function(){
-    //let ddh=zhiJianJiLu.data.ddh;
-    let ddh="";
+    let ddh=zhiJianJiLu.data.ddh;
     let yongHu=wx.getStorageSync('yongHu');
     wx.request({
       url: rootIP+"getZhiJianJiLuList",
@@ -82,24 +81,22 @@ Page({
       success: function (res) {
         console.log(res);
         let data=res.data;
-        let zjjlList=data.zjjlList;
-        zhiJianJiLu.setData({zjjlList:zjjlList});
-        /*
         let message=data.message;
-        console.log("message==="+message)
         if(message=="ok"){
-          let dingDan=data.dingDan;
-          siJiDingDan.setData({dingDan:dingDan,dzjDdztMc:data.dzjDdztMc,showDdxxV:true});
+          let zjjlList=data.zjjlList;
+          zhiJianJiLu.setData({zjjlList:zjjlList});
         }
-        else{
-          siJiDingDan.setData({noDdInfo:data.info,showDdxxV:false});
-        }
-        */
       }
     })
   },
+  getInputValue:function(e){
+    if(e.currentTarget.id=="ddh_inp"){
+      let ddh=e.detail.value;
+      zhiJianJiLu.setData({ddh:ddh});
+    }
+  },
   goPage:function(e){
-    let qyh=siJiDingDan.data.qyh;
+    let qyh=zhiJianJiLu.data.qyh;
     let page=e.currentTarget.dataset.page;
     wx.redirectTo({
       url: '/pages/'+page+'/'+page+'?qyh='+qyh,
