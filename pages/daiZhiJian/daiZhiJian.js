@@ -102,14 +102,14 @@ Page({
   newPaiDuiJiLu:function(){
     let yfwDdId=daiZhiJian.data.dingDan.id;
     let yongHu=daiZhiJian.data.yongHu;
-    let zjyId=yongHu.id;
+    let yfwZjyId=yongHu.id;
     let jg=daiZhiJian.data.zjjg;
     let qyh=yongHu.qyh;
     console.log("yfwDdId==="+yfwDdId);
     wx.request({
       url: rootIP+"newZhiJianJiLu",
       method: 'POST',
-      data: { yfwDdId:yfwDdId,zjyId:zjyId,jg:jg,qyh:qyh},
+      data: { yfwDdId:yfwDdId,yfwZjyId:yfwZjyId,jg:jg,qyh:qyh},
       header: {
         'content-type': 'application/x-www-form-urlencoded',
       },

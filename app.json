@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/siJiDingDan/siJiDingDan",
     "pages/zhiJianJiLu/zhiJianJiLu",
     "pages/yongHuShouYe/yongHuShouYe",
-    "pages/siJiDingDan/siJiDingDan",
     "pages/daiZhiJian/daiZhiJian",
     "pages/siJiPaiDui/siJiPaiDui",
     "pages/index/index",

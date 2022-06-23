@@ -27,7 +27,7 @@ Page({
    */
   onReady: function () {
     let yongHu=wx.getStorageSync('yongHu');
-    login.setData({yhm: yongHu.yhm,mm:yongHu.mm});
+    login.setData({yhm: yongHu.yhm,mm:yongHu.jmmm});
   },
 
   /**
@@ -120,6 +120,7 @@ Page({
         let status=data.status;
         if(status==1){
           let yongHu=res.data.data;
+          yongHu.jmmm=login.data.mm;
           let qyh=login.data.qyh;
           yongHu.qyh=qyh;
           wx.setStorageSync("yongHu", yongHu);
