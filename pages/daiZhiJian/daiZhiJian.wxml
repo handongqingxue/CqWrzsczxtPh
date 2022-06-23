@@ -30,5 +30,5 @@
       </radio-group>
     </view>
 	</view>
-	<view class="tj_but_v" catchtap="newPaiDuiJiLu">提交</view>
+	<view class="tj_but_v" catchtap="newZhiJianJiLu">提交</view>
 </view>

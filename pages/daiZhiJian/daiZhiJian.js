@@ -99,7 +99,7 @@ Page({
     let value=e.detail.value;
     daiZhiJian.setData({zjjg:value});
   },
-  newPaiDuiJiLu:function(){
+  newZhiJianJiLu:function(){
     let yfwDdId=daiZhiJian.data.dingDan.id;
     let yongHu=daiZhiJian.data.yongHu;
     let yfwZjyId=yongHu.id;
